@@ -90,7 +90,7 @@ Create a `.env` file containing your OrangeHRM, MySQL, and SMTP settings.
 
 ### 4. Run the Service
 
-Start the service using the project's launcher script.
+Start the service by clicking the `start.bat` file.
 
 ## Troubleshooting
 
