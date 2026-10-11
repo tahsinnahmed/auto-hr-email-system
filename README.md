@@ -2,31 +2,35 @@
 
 When HR adds a new employee to OrangeHRM with a personal email on the Contact Details tab, this service detects them within minutes, generates a personalized welcome message, and sends it automatically — no manual typing, no forgotten follow-ups, no inconsistency between hires.
 
-## Screenshots
+## How It Works
+
+### Architecture
+
+<img width="5559" height="2662" alt="deepseek_mermaid_20261011_fb43d8" src="https://github.com/user-attachments/assets/cf0b1a95-e81b-41a3-9208-cba809203b67" />
 
 ### 1. OAuth Authorization
 
 Authorize the application through OrangeHRM on the first run.
 
-![OAuth Authorization](<img width="513" height="471" alt="AHRES-1" src="https://github.com/user-attachments/assets/ddb1b7fa-291e-4feb-a852-db1bda649762" />
+<img width="513" height="471" alt="AHRES-1" src="https://github.com/user-attachments/assets/ddb1b7fa-291e-4feb-a852-db1bda649762" />
 
 ### 2. Service Startup
 
 The launcher initializes MySQL, starts the poller, and launches the FastAPI server.
 
-![Service Startup](<img width="1915" height="1014" alt="AHRES-2" src="https://github.com/user-attachments/assets/0ac00960-ca77-44e1-b023-2e3638180f7f" />)
+<img width="1915" height="1014" alt="AHRES-2" src="https://github.com/user-attachments/assets/3fc7ffd1-61de-4d0b-b2e8-b99b17473256" />
 
 ### 3. Auto Detection and Mail Sending
 
 The system detects new employees, retrieves their contact details, sends welcome emails, and saves the records.
 
-![Automatic Onboarding](<img width="1908" height="498" alt="AHRES-3" src="https://github.com/user-attachments/assets/e9d4d0c5-da0f-4d41-9db2-a11281dbeedb" />)
+<img width="1908" height="498" alt="AHRES-3" src="https://github.com/user-attachments/assets/1a726873-d1de-4598-9d93-ee8fef795ac8" />
 
 ### 4. Email Receiver
 
 New employees receive a personalized email with their start date and first-day instructions.
 
-![Welcome Email](<img width="905" height="904" alt="AHRES-4" src="https://github.com/user-attachments/assets/bdd9e9c3-4015-4d86-a416-07fd1f68ec86" />)
+<img width="905" height="904" alt="AHRES-4" src="https://github.com/user-attachments/assets/3750f133-869c-4ebb-a8af-31daf200b00a" />
 
 ## Features
 
@@ -87,27 +91,6 @@ Create a `.env` file containing your OrangeHRM, MySQL, and SMTP settings.
 ### 4. Run the Service
 
 Start the service using the project's launcher script.
-
-## How It Works
-
-```text
-OrangeHRM
-    |
-    v
-Employee Detection
-    |
-    v
-Personal Email Lookup
-    |
-    v
-Welcome Email Generation
-    |
-    v
-SMTP Delivery
-    |
-    v
-MySQL Record
-```
 
 ## Troubleshooting
 
