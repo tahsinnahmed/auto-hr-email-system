@@ -1,6 +1,6 @@
 # Auto HR Email System
 
-When HR adds a new employee to OrangeHRM with a personal email on the Contact Details tab, this service detects them within minutes, generates a personalized welcome message, and sends it automatically — no manual typing, no forgotten follow-ups, no inconsistency between hires.
+When HR adds a new employee to OrangeHRM with an email in the Contact Details tab, this service detects them within minutes. It generates a message and sends it individually and automatically. This approach eliminates manual typing, forgotten follow-ups, and inconsistency between hires.
 
 ## How It Works
 
